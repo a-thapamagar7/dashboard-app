@@ -8,14 +8,23 @@ import DataPage from "@/pages/DataPage.js";
 const router = createBrowserRouter([
   {
     element: <App />,
+    handle: {
+      breadcrumb: "Items",
+    },
     children: [
       {
         path: "/",
         element: <HomePage />,
+        handle: {
+          breadcrumb: "Home",
+        },
       },
       {
         path: "/data",
         element: <DataPage />,
+        handle: {
+          breadcrumb: "Data",
+        },
       },
     ],
   },
