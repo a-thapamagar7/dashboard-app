@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-      <SidebarProvider className="bg-sidebar-accent">
+      <SidebarProvider className="bg-white">
         <AppSidebar navLinks={navLinks} />
         <main className="flex">
           <Outlet />
