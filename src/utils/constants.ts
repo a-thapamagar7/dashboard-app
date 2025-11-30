@@ -4,7 +4,7 @@ import { LayoutDashboard, Table } from "lucide-react";
 export const navLinks: NavLinks[] = [
   {
     title: "Home",
-    url: "/home",
+    url: "/",
     icon: LayoutDashboard,
   },
   {

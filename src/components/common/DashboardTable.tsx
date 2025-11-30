@@ -158,7 +158,7 @@ export default function DashboardTable() {
   return (
     <div className="w-full p-2 sm:p-6">
       <div className="flex flex-col gap-y-4">
-        <h1 className="text-3xl font-bold">Products Dashboard</h1>
+        <h1 className="text-3xl font-bold">Posts Dashboard</h1>
         <hr className="border" />
       </div>
 
