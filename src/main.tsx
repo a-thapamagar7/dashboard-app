@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import HomePage from "@/pages/HomePage.js";
 import DataPage from "@/pages/DataPage.js";
+import { Provider } from "react-redux";
+import { store } from "@/redux/store.ts";
 
 const router = createBrowserRouter([
   {
@@ -31,5 +33,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
 );

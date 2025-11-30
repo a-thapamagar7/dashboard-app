@@ -6,4 +6,5 @@ export const api = createApi({
     baseUrl: "https://dummyjson.com/",
   }),
   endpoints: () => ({}),
+  tagTypes: ["Posts"],
 });
