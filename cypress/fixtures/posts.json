@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "The glowing stone on the riverbank",
+    "body": "He picked up the stone expecting it to be cold, but it pulsed warmly in his hand.",
+    "tags": ["fantasy", "magical", "mystery"],
+    "reactions": { "likes": 120, "dislikes": 3 },
+    "views": 500,
+    "userId": 42
+  },
+  {
+    "id": 2,
+    "title": "A quiet walk through the old district",
+    "body": "The buildings leaned with age but held a certain beauty.",
+    "tags": ["history", "urban"],
+    "reactions": { "likes": 87, "dislikes": 6 },
+    "views": 212,
+    "userId": 77
+  },
+  {
+    "id": 3,
+    "title": "The last letter he never sent",
+    "body": "It sat in his drawer for years, waiting.",
+    "tags": ["drama", "romance"],
+    "reactions": { "likes": 201, "dislikes": 15 },
+    "views": 654,
+    "userId": 33
+  },
+  {
+    "id": 4,
+    "title": "A tavern full of strange faces",
+    "body": "One hooded figure in the corner listened silently.",
+    "tags": ["fantasy", "adventure", "magical"],
+    "reactions": { "likes": 300, "dislikes": 10 },
+    "views": 730,
+    "userId": 90
+  },
+  {
+    "id": 5,
+    "title": "Rain on the old tin roof",
+    "body": "The rhythmic tapping made him nostalgic for summers long gone.",
+    "tags": ["nostalgia", "life"],
+    "reactions": { "likes": 155, "dislikes": 2 },
+    "views": 488,
+    "userId": 19
+  },
+  {
+    "id": 6,
+    "title": "The cat that stared too deeply",
+    "body": "Its eyes were like swirling galaxies.",
+    "tags": ["mystery", "surreal", "magical"],
+    "reactions": { "likes": 178, "dislikes": 9 },
+    "views": 322,
+    "userId": 11
+  },
+  {
+    "id": 7,
+    "title": "Footsteps in the empty hallway",
+    "body": "He froze. The sound was unmistakable.",
+    "tags": ["horror", "thriller"],
+    "reactions": { "likes": 111, "dislikes": 8 },
+    "views": 260,
+    "userId": 61
+  },
+  {
+    "id": 8,
+    "title": "A promise made under the willow tree",
+    "body": "They etched their initials into the bark.",
+    "tags": ["romance", "sliceoflife"],
+    "reactions": { "likes": 198, "dislikes": 4 },
+    "views": 403,
+    "userId": 52
+  },
+  {
+    "id": 9,
+    "title": "The librarian who knew too much",
+    "body": "She always seemed to know what book he needed.",
+    "tags": ["mystery", "wholesome"],
+    "reactions": { "likes": 230, "dislikes": 3 },
+    "views": 540,
+    "userId": 88
+  },
+  {
+    "id": 10,
+    "title": "The door in the basement wall",
+    "body": "It wasn’t there yesterday.",
+    "tags": ["fantasy", "mystery", "magical"],
+    "reactions": { "likes": 320, "dislikes": 12 },
+    "views": 790,
+    "userId": 44
+  },
+  {
+    "id": 11,
+    "title": "When the sky rained feathers",
+    "body": "A single white feather floated down.",
+    "tags": ["surreal", "wonder"],
+    "reactions": { "likes": 260, "dislikes": 7 },
+    "views": 615,
+    "userId": 5
+  }
+]
