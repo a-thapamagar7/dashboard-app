@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import {
   flexRender,
   getCoreRowModel,
@@ -33,6 +33,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/shadcn-components/ui/select";
+import { debounce } from "@/utils/resusableFunction";
 
 const columns: ColumnDef<Post>[] = [
   {
@@ -46,7 +47,10 @@ const columns: ColumnDef<Post>[] = [
     accessorKey: "title",
     header: "Title",
     cell: ({ row }) => (
-      <div className="w-[100px] truncate [400px]:w-[150px] lg:max-w-md xl:w-[300px]">
+      <div
+        data-cy="title"
+        className="w-[100px] truncate [400px]:w-[150px] lg:max-w-md xl:w-[300px]"
+      >
         {row.getValue("title")}
       </div>
     ),
@@ -127,10 +131,14 @@ export default function DashboardTable() {
     manualPagination: true,
   });
 
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-    setPageIndex(0);
-  };
+  const debouncedSearchChange = useCallback(
+    // eslint-disable-next-line react-hooks/use-memo
+    debounce((e: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchTerm(e.target.value);
+      setPageIndex(0);
+    }, 150), // Now you can control the delay
+    []
+  );
 
   const handleTagChange = (value: string) => {
     setSelectedTag(value === "all" ? "" : value);
@@ -164,15 +172,14 @@ export default function DashboardTable() {
 
       <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center mt-4 py-4">
         <Input
-          placeholder="Search products..."
-          value={searchTerm}
-          onChange={handleSearchChange}
+          placeholder="Search..."
+          onChange={debouncedSearchChange}
           className="w-full lg:w-1/3"
         />
 
         <Select value={selectedTag || "all"} onValueChange={handleTagChange}>
           <SelectTrigger className="w-full lg:w-[180px]">
-            <SelectValue placeholder="Filter by tag" />
+            <SelectValue data-cy="tag-select" placeholder="Filter by tag" />
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="all">All Tags</SelectItem>
